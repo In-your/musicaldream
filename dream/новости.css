@@ -32,6 +32,36 @@ h3 {
 ul{
     list-style: "♡";
 }
+.block{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+.link span{
+  position: absolute;
+  top: 170px;
+  left: 0;
+  display: none;
+  animation: animate .5s ease-in-out;
+}
+ .link:hover span{
+   display: block;
+ }
+
+ @keyframes animate {
+   0%{
+   top:50px;
+   opacity: 0;
+   }
+   100%{
+     top: 170px;
+     opacity: 1;
+   }
+ }
 /*ul{
     list-style: before
         content "&#9825"
